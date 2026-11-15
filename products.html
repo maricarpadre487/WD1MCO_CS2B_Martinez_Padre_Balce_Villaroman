@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products | Hunter x Hunter</title>
+    <link rel="stylesheet" href="rsc/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="rsc/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"
+          ><img
+            src="media/img/logo.jpg"
+            width="40"
+            height="40"
+            class="me-2 rounded-circle"
+            alt="logo"
+          />Hunter x Hunter</a
+        >
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#cinema">Cinema</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="characters.html">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">Products</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="d-flex justify-content-between align-items-center mt-4">
+        <h1>Products</h1>
+        <button
+          class="btn btn-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#cartModal"
+        >
+          Cart <span class="badge bg-success" id="count">0</span>
+        </button>
+      </div>
+      <div class="row g-3 mt-1">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="media/img/merch1.jpg.avif"
+              alt="Gon Fishing Rod Replica"
+            />
+            <div class="card-body d-flex flex-column">
+              <h6>Gon Fishing Rod Replica</h6>
+              <p class="small">
+                Cosplay-style fishing rod, perfect for Hunters.
+              </p>
+              <p class="fw-bold mt-auto">PHP 450</p>
+              <button
+                class="btn btn-success add"
+                data-name="Gon Fishing Rod Replica"
+                data-price="450"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch2.jpg" alt="Killua Yo-Yo" />
+            <div class="card-body d-flex flex-column">
+              <h6>Killua Yo-Yo</h6>
+              <p class="small">Glow-in-the-dark yo-yo like Killua's.</p>
+              <p class="fw-bold mt-auto">PHP 199</p>
+              <button
+                class="btn btn-success add"
+                data-name="Killua Yo-Yo"
+                data-price="199"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch3.jpg" alt="Hunter License Card" />
+            <div class="card-body d-flex flex-column">
+              <h6>Hunter License Card</h6>
+              <p class="small">Replica license card with holder.</p>
+              <p class="fw-bold mt-auto">PHP 150</p>
+              <button
+                class="btn btn-success add"
+                data-name="Hunter License Card"
+                data-price="150"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch4.jpg" alt="Nen Hoodie" />
+            <div class="card-body d-flex flex-column">
+              <h6>Nen Hoodie</h6>
+              <p class="small">Green hoodie, comfy for all-nighters.</p>
+              <p class="fw-bold mt-auto">PHP 899</p>
+              <button
+                class="btn btn-success add"
+                data-name="Nen Hoodie"
+                data-price="899"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch5.jpeg" alt="Kurapika Chain Keychain" />
+            <div class="card-body d-flex flex-column">
+              <h6>Kurapika Chain Keychain</h6>
+              <p class="small">Metal chain keychain, 5 pcs.</p>
+              <p class="fw-bold mt-auto">PHP 120</p>
+              <button
+                class="btn btn-success add"
+                data-name="Kurapika Chain Keychain"
+                data-price="120"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch6.jpeg" alt="Hisoka Playing Cards" />
+            <div class="card-body d-flex flex-column">
+              <h6>Hisoka Playing Cards</h6>
+              <p class="small">Trump deck with Hisoka art.</p>
+              <p class="fw-bold mt-auto">PHP 250</p>
+              <button
+                class="btn btn-success add"
+                data-name="Hisoka Playing Cards"
+                data-price="250"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch7.jpeg" alt="Phantom Troupe Tee" />
+            <div class="card-body d-flex flex-column">
+              <h6>Phantom Troupe Tee</h6>
+              <p class="small">Black shirt with spider logo.</p>
+              <p class="fw-bold mt-auto">PHP 499</p>
+              <button
+                class="btn btn-success add"
+                data-name="Phantom Troupe Tee"
+                data-price="499"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch8.jpg" alt="Whale Island Mug" />
+            <div class="card-body d-flex flex-column">
+              <h6>Hunter Mug</h6>
+              <p class="small">Ceramic mug, 350ml.</p>
+              <p class="fw-bold mt-auto">PHP 180</p>
+              <button
+                class="btn btn-success add"
+                data-name="Whale Island Mug"
+                data-price="180"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch9.png" alt="Leorio Briefcase" />
+            <div class="card-body d-flex flex-column">
+              <h6>Leorio Briefcase</h6>
+              <p class="small">Mini briefcase pencil case.</p>
+              <p class="fw-bold mt-auto">PHP 350</p>
+              <button
+                class="btn btn-success add"
+                data-name="Leorio Briefcase"
+                data-price="350"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch10.jpeg" alt="Greed Island Card Book" />
+            <div class="card-body d-flex flex-column">
+              <h6>Greed Island Card Book</h6>
+              <p class="small">Binder for your fave cards.</p>
+              <p class="fw-bold mt-auto">PHP 300</p>
+              <button
+                class="btn btn-success add"
+                data-name="Greed Island Card Book"
+                data-price="300"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch11.jpeg" alt="Gon & Killua Poster" />
+            <div class="card-body d-flex flex-column">
+              <h6>Gon & Killua Poster</h6>
+              <p class="small">A2 glossy wall poster.</p>
+              <p class="fw-bold mt-auto">PHP 160</p>
+              <button
+                class="btn btn-success add"
+                data-name="Gon & Killua Poster"
+                data-price="160"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="media/img/merch12.jpg" alt="Chimera Ant Plush" />
+            <div class="card-body d-flex flex-column">
+              <h6>Chimera Ant Plush</h6>
+              <p class="small">Soft plush for stress relief.</p>
+              <p class="fw-bold mt-auto">PHP 550</p>
+              <button
+                class="btn btn-success add"
+                data-name="Chimera Ant Plush"
+                data-price="550"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal fade" id="cartModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Your Cart</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body" id="cartBody"></div>
+          <div class="modal-footer justify-content-between">
+            <b>Total: PHP <span id="total">0</span></b>
+            <div>
+              <button class="btn btn-outline-danger" id="clear">Clear</button>
+              <button class="btn btn-success" id="checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light mt-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img
+              src="media/img/logo.jpg"
+              width="50"
+              class="rounded-circle mb-2"
+              alt="logo"
+            />
+            <h5>Hunter x Hunter Fan Site</h5>
+            <p class="small">Follow us:</p>
+            <a href="https://facebook.com" class="text-light me-2">Facebook</a
+            ><a href="https://instagram.com" class="text-light me-2"
+              >Instagram</a
+            ><a href="https://twitter.com" class="text-light">X</a>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Developed by:</h5>
+            <ul class="list-unstyled small">
+              <li>Irish Martinez</li>
+              <li>Maricar Padre</li>
+              <li>Vince Nicolai Balce</li>
+              <li>Enriquo Gravidez Villaroman</li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Menu</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-light" href="index.html">Feature</a></li>
+              <li><a class="text-light" href="index.html#cinema">Cinema</a></li>
+              <li>
+                <a class="text-light" href="characters.html">Characters</a>
+              </li>
+              <li><a class="text-light" href="products.html">Products</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center small mb-0">
+          Hunter x Hunter belongs to Yoshihiro Togashi, Madhouse &amp; Nippon
+          TV. No copyright infringement intended.
+        </p>
+      </div>
+    </footer>
+    <script src="rsc/js/bootstrap.bundle.min.js"></script>
+    <script src="rsc/js/cart.js"></script>
+  </body>
+</html>
