@@ -75,7 +75,7 @@ footer::before {
 .hero {
   background:
     linear-gradient(rgba(18, 18, 18, 0.55), rgba(18, 18, 18, 0.55)),
-    url(../../media/img/banner.svg) center/cover;
+    url(../../media/img/banner.jpg) center/cover;
   color: var(--paper);
   padding: 120px 0 150px;
   clip-path: polygon(
